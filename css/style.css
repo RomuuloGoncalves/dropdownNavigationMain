@@ -11,13 +11,13 @@ body{
 }
 
 header{
-    border: 2px solid green;
     height: 8vh;
     display: flex;
     align-items: center;
 }
 
 #marca{
+    margin-left: 10px;
     font-size: 50px;
     font-weight: 700;
 }
@@ -27,6 +27,7 @@ header{
     gap: 20px;
     justify-self: start;
     margin-left: 50px;
+    align-items: center;
 }
 
 #cadastro{
@@ -67,7 +68,6 @@ main div{
 }
 
 .div1{
-    border: 2px solid red;
 
     display: flex;
     flex-direction: column;
@@ -107,7 +107,6 @@ br{
 }
 
 .imagensPropaganda{
-    border: 2px solid palevioletred;
 
     max-height: 25px;
     width: max-content;
@@ -120,7 +119,6 @@ br{
 }
 
 .div2{
-   border: 2px solid blue;
    display: flex;
    align-items: center;
    justify-content: center;
