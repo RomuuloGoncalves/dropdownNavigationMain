@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdownNavigationMain</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>  
+    <header>
+        <div id="marca">
+            snap
+        </div>
+        <div id="sobre">
+            <div class="features">
+               <div class="drop" id="features" onclick="toggleMenu1('featuresDrop')"> Features <img id="imgFeature" src="./images/icon-arrow-down.svg" alt=""></div>
+               <div class="dropMenu1 dropMenu" id="featuresDrop">
+                    <div class="item"><img src="./images/icon-todo.svg" alt=""> TO DO</div>
+                    <div class="item"><img src="./images/icon-calendar.svg" alt=""> Calendar</div>
+                    <div class="item"><img src="./images/icon-reminders.svg" alt=""> Reminder</div>
+                    <div class="item"><img src="./images/icon-planning.svg" alt=""> Planning</div>
+               </div>
+            </div>
+            <div class="company">
+               <div class="drop" id="company" onclick="toggleMenu2('companyDrop')"> Company <img id="imgCompany" src="./images/icon-arrow-down.svg" alt=""> </div>
+               <div class="dropMenu2 dropMenu" id="companyDrop">
+                <div class="item">History</div>
+                <div class="item">Our Team</div>
+                <div class="item">Blog</div>
+               </div>
+            </div>
+            Careers
+            About
+        </div>
+        <div id="cadastro">
+            <button id="login">Login</button>
+            <button id="register">Register</button>
+        </div>
+    </header>
+    <main>
+        <div class="div1">
+            <h1>Make <br>
+                remote work</h1>
+
+            <p>
+                    Get your team in sync, no matter your location. <br>
+                    Streamline precesses, create team rituals and <br>
+                    watch productivity soar.
+            </p>
+
+            <button id="learnMore"> Learn more </button>
+            
+            <div class="imagensPropaganda">
+                <img class="client" src="./images/client-databiz.svg" alt="">
+                <img class="client" src="./images/client-databiz.svg" alt="">
+                <img class="client" src="./images/client-meet.svg" alt="">
+                <img class="client" src="./images/client-maker.svg" alt="">
+            </div>
+        </div>
+
+        <div class="div2">
+            <img id="hero" src="./images/image-hero-desktop.png" alt="">
+        </div>
+
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
