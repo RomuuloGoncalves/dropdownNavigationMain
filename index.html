@@ -7,6 +7,7 @@
     <title>dropdownNavigationMain</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>  
     <header>
@@ -38,10 +39,55 @@
             <button id="login">Login</button>
             <button id="register">Register</button>
         </div>
+
+        <!-- <div class="hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>  -->
+        <button id="btn-mobile">Menu</button>
+        <div class=" logomenu">
+            <nav id="nav">
+                <ul id="menu">
+                    <div id="sobre">
+                        <div class="features">
+                           <div class="drop" id="features" onclick="toggleMenu1('featuresDrop')"> Features </div>
+                           <div class="dropItem">
+                               
+                               <div class="item"><img src="./images/icon-todo.svg" alt=""> TO DO</div>
+                               <div class="item"><img src="./images/icon-calendar.svg" alt=""> Calendar</div>
+                               <div class="item"><img src="./images/icon-reminders.svg" alt=""> Reminder</div>
+                               <div class="item"><img src="./images/icon-planning.svg" alt=""> Planning</div>
+                            </div>
+                        </div>
+                        <div class="company">
+                           <div class="drop" id="company" onclick="toggleMenu2('companyDrop')"> Company </div>
+                           <div class="dropItem">
+
+                               
+                               <div class="item">History</div>
+                               <div class="item">Our Team</div>
+                               <div class="item">Blog</div>
+                            </div>
+                        </div>
+                        Careers <br>
+                        <br>
+                        About
+                    </div>
+                    <div id="cadastro">
+                        <button id="login">Login</button>
+                        <button id="register">Register</button>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+
+
+        </div>
     </header>
     <main>
         <div class="div1">
-            <h1>Make <br>
+            <h1>Make 
                 remote work</h1>
 
             <p>
@@ -61,7 +107,7 @@
         </div>
 
         <div class="div2">
-            <img id="hero" src="./images/image-hero-desktop.png" alt="">
+            <img id="hero"  src="./images/image-hero-desktop.png" alt="">
         </div>
 
     </main>
