@@ -1,194 +1,159 @@
-.logomenu, #btn-mobile{
-    display: none;
+.logomenu,
+#btn-mobile {
+	display: none;
 }
-@media(max-width:800px){
-    main{
-        flex-direction: column;
-        min-height: 80vh;
-    }
+@media (max-width: 800px) {
+	main {
+		flex-direction: column;
+		min-height: 80vh;
+	}
 
-    .div1, .div2{
-        margin: 0;
-        padding: 0;
+	.div1,
+	.div2 {
+		margin: 0;
+		padding: 0;
 
-        width: 100%;
-        display: flex;
-        align-items: center;
-    }
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
 
-    .div1 h1{
-        margin-top: 10px;
-        font-size: 40px;
-        text-align: center;
-    }
+	.div1 h1 {
+		margin-top: 10px;
+		font-size: 40px;
+		text-align: center;
+	}
 
-    .div1, p{
-        text-align: justify;
-        padding: 0 2%;
-    }
+	.div1,
+	p {
+		text-align: justify;
+		padding: 0 2%;
+	}
 
-    .imagensPropaganda img{
-        width: 40px;
-        height: 10px;
-        margin-top: 10px;
-    }
+	.imagensPropaganda img {
+		width: 40px;
+		height: 10px;
+		margin-top: 10px;
+	}
 
-    .div2 img{
-        display: none;
+	.div2 img {
+		display: none;
+	}
 
-    }
+	.div2 {
+		margin-top: 50px;
+		min-height: 50vh;
+		background-image: url("../images/image-hero-mobile.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
 
-    .div2{
-        margin-top: 50px;
-        min-height: 50vh;
-        background-image: url("../images/image-hero-mobile.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+	header {
+		display: flex;
+		justify-content: space-between;
+	}
 
+	#sobre,
+	#cadastro {
+		display: none;
+	}
 
-  header{
-    display: flex;
-    justify-content: space-between;
-  }
+	.hamburguer {
+		margin-right: 2px;
+		display: flex;
+		gap: 5px;
+		flex-direction: column;
+	}
 
-    #sobre, #cadastro{
-        display: none;
-    }
+	.hamburguer span {
+		width: 30px;
+		border: 2px solid black;
+	}
 
-    .hamburguer{
-        margin-right: 2px;
-        display: flex;
-        gap: 5px;
-        flex-direction: column;
-    }
+	.main {
+		flex-grow: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 40px;
+		flex-wrap: wrap;
+		padding: 0 50px;
+	}
 
-    .hamburguer span{
-        width: 30px;
-        border: 2px solid black;
-    }
+	#btn-mobile {
+		display: none;
+		width: 60px;
+		height: 30px;
+		margin-right: 2%;
+		align-content: flex-end;
+		font-size: 1rem;
+		cursor: pointer;
+		background: none;
+		border: none;
+		font-size: 24px;
+		position: absolute;
+		right: 3px;
+		z-index: 100;
+	}
 
+	.logomenu {
+		display: block;
+	}
 
-    .main{
-        flex-grow: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-        flex-wrap: wrap;
-        padding: 0 50px;
-    }
- 
-    
+	#btn-mobile {
+		display: block !important;
+	}
 
+	#menu {
+		display: block;
+		position: absolute;
+		font-size: 16px;
+		width: 100%;
+		top: 50px;
+		right: 0px;
+		background-color: #dbd6d6;
+		z-index: 100000;
+		transition: 0.6s;
+		visibility: hidden;
+		height: 0px;
+		width: 0;
+		overflow-y: hidden;
+	}
 
+	#nav.active #menu {
+		height: 90vh;
+		width: 100%;
+		visibility: visible;
+		overflow-y: auto;
+	}
 
+	.logomenu #sobre,
+	.logomenu #cadastro {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin: 0;
+		padding-left: 4%;
+		padding-top: 4%;
+	}
 
+	.logomenu #sobre {
+		align-items: flex-start;
+		margin: 0;
+	}
 
+	.logomenu .dropItem {
+		margin-top: 4px;
+		margin-left: 20px;
+	}
 
+	.logomenu #cadastro {
+		align-items: center;
+		margin-top: 50px;
+	}
 
-
-
-
-
-
-    #btn-mobile{
-        display: none;
-        width: 60px;
-        height: 30px;
-        margin-right: 2%;
-        align-content: flex-end;
-        font-size: 1rem;
-        cursor: pointer;
-        background: none;
-        border: none;
-        font-size: 24px;
-        position: absolute;
-        right: 3px;
-        z-index: 100;
-    
-    }
-
-    .logomenu{
-        display: block;
-    }
-
-        #btn-mobile{
-            display: block !important;
-        }
-    
-        #menu{
-            display: block;
-            position: absolute;
-            font-size: 16px;
-            width: 100%;
-            top: 50Px;
-            right: 0px;
-            background-color: #dbd6d6;
-            z-index: 100000;
-            transition: .6s;
-            visibility: hidden;
-            height: 0px;
-            width: 0;
-            overflow-y: hidden;
-        }
-        
-        #nav.active #menu{
-            height: 90vh;
-            width: 100%;
-            visibility: visible;
-            overflow-y: auto;
-           
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .logomenu #sobre, .logomenu #cadastro{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 0;
-        padding-left: 4%;
-        padding-top: 4%;
-    }
-
-    .logomenu #sobre{
-        align-items: flex-start;
-        margin: 0;
-    }
-
-    .logomenu .dropItem{
-        margin-top: 4px;
-        margin-left: 20px;
-    }
-
-    .logomenu #cadastro{
-        align-items: center;
-        margin-top: 50px;
-    }
-
-.logomenu #cadastro #login, .logomenu #cadastro #register{
-    padding: 15px 20px;
-}
-
+	.logomenu #cadastro #login,
+	.logomenu #cadastro #register {
+		padding: 15px 20px;
+	}
 }
